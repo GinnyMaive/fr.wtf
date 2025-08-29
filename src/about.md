@@ -13,7 +13,7 @@ Hi! My name is Ginny Mae, gifted boy turned burnout girl.
 * i like bulleted lists
 
 weird on main and easy to manipulate (call me pretty) \
-you can find me posting [weird thoughts that pop into my head](https://transfem.social/@gintoxicating)
+you can find me posting [weird thoughts that pop into my head](https://transister.social/@gintoxicating)
 
 If you are nice we can be friends!
 
