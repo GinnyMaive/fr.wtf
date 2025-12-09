@@ -7,16 +7,16 @@ module.exports = function(eleventyConfig) {
 			      .use(markdownItAnchor)
 			      .use(markdownItAttrs)
 			     );
-    eleventyConfig.addPassthroughCopy("/var/www/gintoxicat.ing/11ty/src/images");
-    eleventyConfig.addPassthroughCopy("/var/www/gintoxicat.ing/11ty/src/favicon.ico");
+    eleventyConfig.addPassthroughCopy("/home/maive/www/fr.wtf/11ty/src/images");
+    eleventyConfig.addPassthroughCopy("/home/maive/www/fr.wtf/11ty/src/favicon.ico");
 
     return {
 	passthroughFileCopy: true,
 	dir: {
-	    input: "/var/www/gintoxicat.ing/11ty/src",
+	    input: "/home/maive/www/fr.wtf/11ty/src",
 	    includes: "_includes",
 	    data: "_data",
-	    output: "/var/www/gintoxicat.ing/www"
+	    output: "/home/maive/www/fr.wtf/www"
 	}
     };
 };
