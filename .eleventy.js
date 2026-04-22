@@ -11,7 +11,8 @@ module.exports = function(eleventyConfig) {
 			     );
     eleventyConfig.addPassthroughCopy("/home/maive/www/fr.wtf/11ty/src/images");
     eleventyConfig.addPassthroughCopy("/home/maive/www/fr.wtf/11ty/src/favicon.ico");
-
+    eleventyConfig.addPassthroughCopy("/home/maive/www/fr.wtf/11ty/src/.well-known");
+    
     eleventyConfig.addPlugin(feedPlugin, {
 	type: "atom", // or "rss", "json"
 	outputPath: "/blog/feed.xml",
