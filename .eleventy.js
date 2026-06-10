@@ -1,6 +1,22 @@
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
+/**
+ * Markdown-it helper function to force external links to open in a new tab.
+ *
+ * You still need to add target=_blank to non-markdown files (like njk templates), though
+ * those links do automatically get decorated with the new window icon via css.
+ */
+const openExternalLinksInNewTab = (tokens, idx) => {
+  const hrefAttr = tokens[idx].attrGet('href');
+
+  // Check if the link is external (starts with http:// or https://)
+  if (hrefAttr && (hrefAttr.startsWith('http://') || hrefAttr.startsWith('https://'))) {
+    tokens[idx].attrSet('target', '_blank');
+    tokens[idx].attrSet('rel', 'noopener noreferrer');
+  }
+};
+
 module.exports = function(eleventyConfig) {
     const TIME_ZONE = "America/Los_Angeles";
     eleventyConfig.addDateParsing(function(dateValue) {
@@ -22,6 +38,7 @@ module.exports = function(eleventyConfig) {
     const markdownItAnchor = require('markdown-it-anchor');
     const markdownItAttrs = require('markdown-it-attrs');
     const markdownItFootnote = require("markdown-it-footnote");
+    const markdownItForInline = require("markdown-it-for-inline");
 
     const { DateTime } = require("luxon");
     
@@ -29,6 +46,7 @@ module.exports = function(eleventyConfig) {
 			      .use(markdownItAnchor)
 			      .use(markdownItAttrs)
 			      .use(markdownItFootnote)
+			      .use(markdownItForInline, 'external_new_win', 'link_open', openExternalLinksInNewTab)
 			     );
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/favicon.ico");
@@ -41,8 +59,8 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY);
     });
 
-        eleventyConfig.addPlugin(feedPlugin, {
-        type: "rss",
+    eleventyConfig.addPlugin(feedPlugin, {
+	type: "rss",
         outputPath: "/blog/feed.xml",
         collection: {
             name: "post",
