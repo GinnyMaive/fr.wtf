@@ -167,6 +167,26 @@ Welcome to Ginny's Website!!
                 background-size: 100%;
             }
 
+	    a[target="_blank"]::after {
+	      content: "" / " (link opens in a new window)";
+	      display: inline-block;
+
+	      width: 0.6em;
+	      height: 0.6em;
+	      margin-left: 4px;
+
+	      /* Controls the color of the icon */
+	      background-color: #ED64F5;
+	      -webkit-mask-image: url('/assets/images/new-window.svg');
+	      mask-image: url('/assets/images/new-window.svg');
+	      -webkit-mask-size: contain;
+	      mask-size: contain;
+	      -webkit-mask-repeat: no-repeat;
+	      mask-repeat: no-repeat;
+
+	      vertical-align: middle;
+	    }
+
             /* navigation section!! */
             #navbar {
                 height: 40px;
