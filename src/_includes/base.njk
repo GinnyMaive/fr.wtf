@@ -1,262 +1,77 @@
-<html>
-<head>
-    
-</head>
-<body>
-        <div id="container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }} - ginny mae :)</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <meta name="description" content="The personal homepage of Ginny Mae, a cute and funny girl who likes to be weird. And gay.">
+  </head>
+  <body>
+    <div id="container">
 
-            <div id="topBar">
-Welcome to Ginny's Website!!
+      <div id="topBar">
+
+
+	<div class="marquee">
+	  <div>
+	    <span>You spin me right round, baby. Like a record, baby.</span>
+	    <span>You spin me right round, baby. Like a record, baby.</span>
+	  </div>
+	</div>
+
+      </div>
+      <div id="headerArea">
+        <nav id="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="flex">
+        <aside id="leftSidebar">
+          <h2>Updates</h2>
+          <div class="box">
+            <p>I have recently updated this tool as of August 2022!</p>
+            <ul style="padding-left:10px;">
+              <li>Rewrote the JS to generate cleaner code</li>
+              <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
+              <li>Added a couple of new features!</li>
+              <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
+            </ul>
+          </div>
+          <h2>Hi there!</h2>
+          <h3>Other Tools</h3>
+          <ul>
+            <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
+            </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
+            <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
+            <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
+            <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
+          </ul>
+        </aside>
+        <main>
+
+	  {{ content | safe }}
+
+	</main>
+      </div>
+
+      <footer id="footer">
+	site generated with <a href="https://www.11ty.dev/" target="_blank">11ty</a>
+	~~
+	<a href="https://sadgrl.online/resources/" target="_blank">template</a> by sadgrl
+	<br>
+	<a href="https://codeberg.org/gintoxicating/gintoxicat.ing" target="_blank">source code</a> by ginny
+	~~
+	all site content is <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">public domain</a>
+      </footer>
+
     </div>
-            <div id="headerArea">
-                
-                <nav id="navbar">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                </nav>
-            </div>
 
-            <div id="flex">
-                <aside id="leftSidebar">
-                    <h2>Updates</h2>
-                    <div class="box">
-                        <p>I have recently updated this tool as of August 2022!</p>
-                        <ul style="padding-left:10px;">
-                            <li>Rewrote the JS to generate cleaner code</li>
-                            <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
-                            <li>Added a couple of new features!</li>
-                            <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
-                        </ul>
-                    </div>
-                    <h2>Hi there!</h2>
-                    <h3>Other Tools</h3>
-                    <ul>
-                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
-                    </ul>
-                </aside>
-                <main>
-
-		  {{ content | safe }}
-
-		</main>
-                
-            </div>
-            <footer id="footer">CC0 Public Domain, 2022</footer>
-        </div>
-
-        <style>
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-                font-weight: bold;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-                font-style: italic;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-                font-style: italic;
-                font-weight: bold;
-            }
-
-            body {
-                font-family: 'Nunito', sans-serif;
-                margin: 0;
-                background-color: #FCF5EE;
-                color: black;
-	        font-weight: 500;
-	        font-size: 1.1em;
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-            #container {
-                max-width: 900px;
-                margin: 0 auto;
-            }
-
-            #container a {
-                color: #850E35;
-                font-weight: bold;
-            }
-
-            #headerArea {
-                padding-top: 10px;
-            }
-
-	    a[target="_blank"]::after {
-	      content: "" / " (link opens in a new window)";
-	      display: inline-block;
-
-	      width: 0.6em;
-	      height: 0.6em;
-	      margin-left: 4px;
-
-	      /* Controls the color of the icon */
-	      background-color: #850E35;
-	      -webkit-mask-image: url('/assets/images/new-window.svg');
-	      mask-image: url('/assets/images/new-window.svg');
-	      -webkit-mask-size: contain;
-	      mask-size: contain;
-	      -webkit-mask-repeat: no-repeat;
-	      mask-repeat: no-repeat;
-
-	      vertical-align: middle;
-	    }
-
-            /* navigation section!! */
-            #navbar {
-                height: 40px;
-                background-color: #FFC4C4;
-                /* navbar color */
-                width: 100%;
-
-                margin-bottom: 10px;
-            }
-
-            #navbar ul {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                justify-content: space-evenly;
-            }
-
-            #navbar li {
-                padding-top: 10px;
-            }
-
-            #leftSidebar {
-                margin-right: 10px;
-            }
-
-            /* navigation links*/
-            #navbar li a {
-                color: #EE6983;
-                /* navbar text color */
-                font-weight: 800;
-                text-decoration: none;
-                /* this removes the underline */
-                padding: 10px 50px;
-            }
-
-            /* navigation link when a link is hovered over */
-            #navbar li a:hover {
-                background-color: #EE6983;
-                color: #850E35;
-                text-decoration: underline;
-            }
-
-            #flex {
-                display: flex;
-            }
-
-            aside {
-                background-color: #FFC4C4;
-                width: 200px;
-                padding: 20px;
-                font-size: smaller;
-            }
-
-            main {
-                background-color: #FFC4C4;
-                flex: 1;
-                padding: 20px;
-                order: 2;
-            }
-
-            #leftSidebar {
-                order: 1;
-            }
-
-            #rightSidebar {
-                order: 3;
-            }
-
-            footer {
-                background-color: #FFC4C4;
-                width: 100%;
-                height: 40px;
-                padding: 10px;
-                margin-bottom: 10px;
-                text-align: center;
-                margin-top: 10px;
-            }
-
-            h1,
-            h2,
-            h3 {
-                color: #850E35;
-            }
-
-            strong {
-	        color: #850E35;
-            }
-
-            .box {
-                background-color: #13092D;
-                border: 1px solid #ED64F5;
-                padding: 10px;
-            }
-
-            #topBar {
-                text-align: center;
-
-                width: 100%;
-                height: 40px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #FFC4C4;
-            }
-
-            @media only screen and (max-width: 800px) {
-                #flex {
-                    flex-wrap: wrap;
-                }
-
-                aside {
-                    width: 100%;
-                }
-
-                main {
-                    order: 1;
-                }
-
-                #leftSidebar {
-                    order: 2;
-                }
-
-                #rightSidebar {
-                    order: 3;
-                }
-
-                #navbar ul {
-                    flex-wrap: wrap;
-                }
-            }
-        </style>
-
-    </body>
-    </html>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+/* color palette: https://colorhunt.co/palette/fcf5eeffc4c4ee6983850e35 */
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.marquee {
+    height: 25px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee div {
+    display: block;
+    width: 200%;
+    height: 30px;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #FCF5EE;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: #850E35;
+    font-weight: bold;
+}
+
+#headerArea {
+    padding-top: 10px;
+}
+
+a[target="_blank"]::after {
+    content: "" / " (link opens in a new window)";
+    display: inline-block;
+
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 4px;
+
+    /* Controls the color of the icon */
+    background-color: #850E35;
+    -webkit-mask-image: url('/assets/images/new-window.svg');
+    mask-image: url('/assets/images/new-window.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    vertical-align: middle;
+}
+
+#navbar {
+    height: 40px;
+    background-color: #FFC4C4;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+}
+
+#leftSidebar {
+    margin-right: 10px;
+}
+
+#navbar li a {
+    color: #EE6983;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 10px 50px;
+}
+
+#navbar li a:hover {
+    background-color: #EE6983;
+    color: #850E35;
+    text-decoration: underline;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: #FFC4C4;
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+}
+
+main {
+    background-color: #FFC4C4;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+#leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
+
+footer {
+    background-color: #FFC4C4;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25vh;
+    font-size: smaller;
+}
+
+h1,
+h2,
+h3 {
+    color: #850E35;
+}
+
+strong {
+    color: #850E35;
+}
+
+.box {
+    background-color: #13092D;
+    border: 1px solid #ED64F5;
+    padding: 10px;
+}
+
+#topBar {
+    text-align: center;
+
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #FFC4C4;
+}
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
+
