@@ -83,6 +83,15 @@ body {
     padding-top: 10px;
 }
 
+/* these add a little extra content above the footnote links, instead of putting the text at the absolute top
+of the window */
+.footnote-item {
+    scroll-margin-top: 40px;
+}
+.footnote-ref a {
+    scroll-margin-top: 40px;
+}
+
 a[target="_blank"]::after {
     content: "" / " (link opens in a new window)";
     display: inline-block;
@@ -171,7 +180,7 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 60vh;
+    margin-bottom: 90vh;
     font-size: smaller;
 }
 

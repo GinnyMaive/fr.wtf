@@ -4,7 +4,9 @@ title: "ginny mae has a homepage (this is it)"
 ---
 # Hiya, I'm Ginny Maive!
 
-test plain
+test plain [^1]
+
+[^1]: footnote
 
 *text itali*
 
