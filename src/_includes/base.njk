@@ -48,41 +48,13 @@ Welcome to Ginny's Website!!
 
 		  {{ content | safe }}
 
-                </main>
+		</main>
                 
             </div>
             <footer id="footer">CC0 Public Domain, 2022</footer>
         </div>
-        <!-- THIS IS THE CSS !-->
+
         <style>
-
-            /* user styles */
-
-            /* styles are what change the color and sizes of stuff on your site. */
-
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-
-            :root {
-                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-                --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
-
-                /* colors */
-                --content: #43256E;
-            }
-
-            /* if you have the URL of a font, you can set it below */
-            /* feel free to delete this if it's not your vibe */
-
-            /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities
-    and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
-    
-    */
-
             @font-face {
                 font-family: Nunito;
                 src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
@@ -110,61 +82,28 @@ Welcome to Ginny's Website!!
             body {
                 font-family: 'Nunito', sans-serif;
                 margin: 0;
-                background-color: #B55690;
-                /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
-                color: #fceaff;
-                /* background-image: var(--body-bg-image); */
+                background-color: #FCF5EE;
+                color: black;
+	        font-weight: 500;
+	        font-size: 1.1em;
             }
 
             * {
                 box-sizing: border-box;
             }
 
-            /* below this line is CSS for the layout */
-
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
-
-
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
             #container {
                 max-width: 900px;
-                /* this is the width of your layout! */
-                /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
                 margin: 0 auto;
-                /* this centers the entire page */
             }
 
-            /* the area below is for all links on your page
-    EXCEPT for the navigation */
             #container a {
-                color: #FF9A56;
+                color: #850E35;
                 font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
             }
 
             #headerArea {
                 padding-top: 10px;
-            }
-
-            #header {
-                width: 100%;
-                background-color: #A30262;
-                /* header color here! */
-                height: 150px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 100%;
             }
 
 	    a[target="_blank"]::after {
@@ -176,7 +115,7 @@ Welcome to Ginny's Website!!
 	      margin-left: 4px;
 
 	      /* Controls the color of the icon */
-	      background-color: #ED64F5;
+	      background-color: #850E35;
 	      -webkit-mask-image: url('/assets/images/new-window.svg');
 	      mask-image: url('/assets/images/new-window.svg');
 	      -webkit-mask-size: contain;
@@ -190,7 +129,7 @@ Welcome to Ginny's Website!!
             /* navigation section!! */
             #navbar {
                 height: 40px;
-                background-color: #A30262;
+                background-color: #FFC4C4;
                 /* navbar color */
                 width: 100%;
 
@@ -215,7 +154,7 @@ Welcome to Ginny's Website!!
 
             /* navigation links*/
             #navbar li a {
-                color: #FF9A56;
+                color: #EE6983;
                 /* navbar text color */
                 font-weight: 800;
                 text-decoration: none;
@@ -225,8 +164,8 @@ Welcome to Ginny's Website!!
 
             /* navigation link when a link is hovered over */
             #navbar li a:hover {
-                background-color: #D162A4;
-                color: #D52D00;
+                background-color: #EE6983;
+                color: #850E35;
                 text-decoration: underline;
             }
 
@@ -234,34 +173,21 @@ Welcome to Ginny's Website!!
                 display: flex;
             }
 
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
             aside {
-                background-color: #A30262;
+                background-color: #FFC4C4;
                 width: 200px;
                 padding: 20px;
                 font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
             }
 
-
-            /* this is the color of the main content area,
-    between the sidebars! */
             main {
-                background-color: #A30262;
+                background-color: #FFC4C4;
                 flex: 1;
                 padding: 20px;
                 order: 2;
             }
 
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
-
-            */ #leftSidebar {
+            #leftSidebar {
                 order: 1;
             }
 
@@ -270,40 +196,30 @@ Welcome to Ginny's Website!!
             }
 
             footer {
-                background-color: #A30262;
-                /* background color for footer */
+                background-color: #FFC4C4;
                 width: 100%;
                 height: 40px;
                 padding: 10px;
                 margin-bottom: 10px;
                 text-align: center;
                 margin-top: 10px;
-                /* this centers the footer text */
             }
 
             h1,
             h2,
             h3 {
-                color: #FFFFFF;
-            }
-
-            h1 {
-                font-size: 25px;
+                color: #850E35;
             }
 
             strong {
-                /* this styles bold text */
-                color: #ED64F5;
+	        color: #850E35;
             }
 
-            /* this is just a cool box, it's the darker colored one */
             .box {
                 background-color: #13092D;
                 border: 1px solid #ED64F5;
                 padding: 10px;
             }
-
-            /* CSS for extras */
 
             #topBar {
                 text-align: center;
@@ -312,18 +228,8 @@ Welcome to Ginny's Website!!
                 height: 40px;
                 padding: 10px;
                 font-size: smaller;
-                background-color: #A30262;
+                background-color: #FFC4C4;
             }
-
-
-            /* BELOW THIS POINT IS MEDIA QUERY */
-
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
 
             @media only screen and (max-width: 800px) {
                 #flex {
@@ -334,10 +240,6 @@ Welcome to Ginny's Website!!
                     width: 100%;
                 }
 
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
                 main {
                     order: 1;
                 }

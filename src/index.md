@@ -4,7 +4,31 @@ title: "ginny mae has a homepage (this is it)"
 ---
 # Hiya, I'm Ginny Maive!
 
-test
+test plain
+
+*text itali*
+
+**text bold**
+
+# h1
+
+hi
+
+## h2
+
+hoo
+
+### h3
+
+wewerwee
+
+#### h4
+
+werwerwr
+
+##### h5
+
+lol
 
 [test remote link](https://nebula.tv/)
 
