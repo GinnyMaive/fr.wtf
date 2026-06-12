@@ -2,28 +2,31 @@
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+    src: url('/assets/font/Nunito-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    src: url('/assets/font/Nunito-Bold.ttf');
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    src: url('/assets/font/Nunito-Italic.ttf');
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    src: url('/assets/font/Nunito-BoldItalic.ttf');
     font-style: italic;
     font-weight: bold;
+    font-display: swap;
 }
-
 
 .marquee {
     height: 25px;
@@ -168,7 +171,7 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 25vh;
+    margin-bottom: 60vh;
     font-size: smaller;
 }
 
@@ -183,14 +186,17 @@ strong {
 }
 
 .box {
-    background-color: #13092D;
-    border: 1px solid #ED64F5;
+    background-color: #FCF5EE;
+    border: 2px dotted #850E35;
     padding: 10px;
+    margin: 5px 0px;
 }
 
 #topBar {
     text-align: center;
 
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 100%;
     height: 40px;
     padding: 10px;
