@@ -193,6 +193,7 @@ h1,
 h2,
 h3 {
     color: #850E35;
+    margin-top: 0px;
 }
 
 strong {
@@ -207,6 +208,9 @@ strong {
 }
 
 #topBar {
+    color: #850E35;
+
+    font-size: large;
     text-align: center;
     border-radius: 10px;
     margin: auto;
@@ -215,7 +219,6 @@ strong {
     width: 90%;
     height: 40px;
     padding: 10px;
-    font-size: smaller;
     background-color: #FFC4C4;
 }
 
