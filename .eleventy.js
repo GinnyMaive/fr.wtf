@@ -50,6 +50,7 @@ module.exports = function(eleventyConfig) {
 			     );
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/favicon.ico");
+    eleventyConfig.addPassthroughCopy("src/.well-known");
 
     eleventyConfig.addFilter("cute_date", (dateObj) => {
 	return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY);

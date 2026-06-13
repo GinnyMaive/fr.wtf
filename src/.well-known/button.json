@@ -1,0 +1,13 @@
+{
+  "$schema": "https://codeberg.org/LunarEclipse/well-known-button/raw/branch/main/drafts/button-2024-06.schema.json",
+  "default": "ginny.2026.04.22",
+  "buttons": [
+    {
+      "id": "ginny.2026.04.22",
+      "uri": "https://fr.wtf/assets/images/88x31/ginny_88x31.png",
+      "alt": "Button to Ginny Mae's website!!",
+      "link": "https://fr.wtf/",
+      "sha256": "9b50fae2ef2dfd93ab37be0e4a58b45b402e8f33913ced2e0a70407158eb83ee"
+    }
+  ]
+}
