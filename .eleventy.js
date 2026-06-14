@@ -49,7 +49,6 @@ module.exports = function(eleventyConfig) {
 			      .use(markdownItForInline, 'external_new_win', 'link_open', openExternalLinksInNewTab)
 			     );
     eleventyConfig.addPassthroughCopy("src/assets");
-    eleventyConfig.addPassthroughCopy("src/favicon.ico");
     eleventyConfig.addPassthroughCopy("src/.well-known");
 
     eleventyConfig.addFilter("cute_date", (dateObj) => {
