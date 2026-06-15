@@ -39,6 +39,10 @@ module.exports = function(eleventyConfig) {
     const markdownItAttrs = require('markdown-it-attrs');
     const markdownItFootnote = require("markdown-it-footnote");
     const markdownItForInline = require("markdown-it-for-inline");
+    const dirOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+
+    eleventyConfig.setQuietMode(true);
+    eleventyConfig.addPlugin(dirOutputPlugin);
 
     const { DateTime } = require("luxon");
     
