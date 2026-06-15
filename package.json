@@ -3,9 +3,10 @@
   "version": "2.0.0",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "serve": "eleventy --serve",
-    "build": "eleventy"
+      "start": "eleventy --serve",
+      "serve": "eleventy --serve",
+      "build": "eleventy",
+      "diff": "TMP_DIR=$(mktemp -d /tmp/site.XXXXXX); eleventy --output $TMP_DIR >/dev/null; echo diffing $TMP_DIR and _site: ; diff -r _site $TMP_DIR"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
