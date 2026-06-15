@@ -1,0 +1,26 @@
+---
+layout: "base.njk"
+---
+<div class="blog_post">
+<h2>{{ title }}</h2>
+<h4>{{ page.date | cute_date }}</h4>
+<hr>
+{{ content | safe }}
+
+<br>
+<div class="box">
+<p style="text-align: left">Don't forget you can subscribe to my blog via <a href="/blog/feed.xml">RSS</a>!</p>
+<p>
+... <i>had</i> you forgotten?
+<br>
+<span style="font-size: small;">
+like,, i don't mean to be a <i>Maybe Later</i> button
+</span>
+<br>
+<span style="padding-left: 10px; font-size: xx-small;">
+I just worry about you sometimes
+</span>
+</p>
+</div>
+
+</div>
