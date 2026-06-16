@@ -18,6 +18,7 @@ const openExternalLinksInNewTab = (tokens, idx) => {
 };
 
 module.exports = function(eleventyConfig) {
+    const isProduction = process.env.ELEVENTY_ENV === 'production';
     const TIME_ZONE = "America/Los_Angeles";
     eleventyConfig.addDateParsing(function(dateValue) {
 	let localDate;
@@ -90,7 +91,7 @@ module.exports = function(eleventyConfig) {
 	    input: "src",
 	    includes: "_includes",
 	    data: "_data",
-	    output: "_site"
+	    output: isProduction ? "_prod" : "_site"
 	}
     };
 };

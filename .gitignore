@@ -3,6 +3,7 @@ mae.lol.code-workspace
 
 # Processed output
 _site/
+_prod/
 
 # Logs
 logs
