@@ -7,6 +7,7 @@
     "serve": "eleventy --serve",
     "build": "eleventy && BASE_DIR=_site npm run diff",
     "push": "ELEVENTY_ENV=production eleventy && BASE_DIR=_prod npm run diff",
+    "status": "diff -qr _site _prod",
     "diff": "TMP_DIR=$(mktemp -d /tmp/site.XXXXXX) ; eleventy --output $TMP_DIR >/dev/null; echo ; echo $(tput smul bold setaf 5) diffing $TMP_DIR and $BASE_DIR:$(tput sgr0) ; echo ; diff -r $BASE_DIR $TMP_DIR ; echo ; echo $(tput smul bold setaf 5) done!$(tput sgr0) ; echo"
   },
   "dependencies": {
