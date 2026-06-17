@@ -11,6 +11,11 @@ If *you* want to [link to me](#link-to-me%3F%3F) you should and I even have an 8
 
 ## People
 
+<a href="https://ely.pub.moe/" target="_blank">
+<img src="https://ely.pub.moe/storage/icons/buttons/elysia.png"
+alt="very pink background with dotted elements. it says 'meow!' in big block letters, and 'elysia' under that. there is a picture of a pink haired cat girl on the right" style="border: #945151 5px solid;"></a>
+<BR><BR>
+
 ## Link To Me??
 
 If you have a website you're probably capable of doing this without my help but
@@ -37,7 +42,8 @@ do that in CSS now):
 
 <div style="justify-content: center; display: flex;">
 <a href="https://gintoxicat.ing/">
-<img src="https://gintoxicat.ing/assets/images/88x31/ginny_88x31.png" width="88" height="31" border="0" alt="ginny mae's website">
+<img src="https://gintoxicat.ing/assets/images/88x31/ginny_88x31.png"
+  width="88" height="31" border="0" alt="ginny mae's website">
 </a>
 </div>
 
