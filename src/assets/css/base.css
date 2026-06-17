@@ -55,7 +55,7 @@
     cursor: default;
 }
 
-.marquee span {
+.marquee > div > span {
     float: left;
     width: 50%;
 }
