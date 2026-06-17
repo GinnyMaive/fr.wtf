@@ -75,11 +75,11 @@ module.exports = function(eleventyConfig) {
         },
         metadata: {
             language: "en",
-            title: "Ginny Maive's Got Something To Say...ive",
+            title: "Ginny Mae is rambling again...",
             subtitle: "the puns will get better",
-            base: "https://mae.lol/",
+            base: "https://gintoxicat.ing/",
             author: {
-                name: "Ginny Maive",
+                name: "Ginny Mae (gintoxicating)",
                 email: "",
             }
         }
