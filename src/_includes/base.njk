@@ -13,6 +13,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Ginny Mae" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+    <link href="/assets/css/prism-okaidia.css" rel="stylesheet">
   </head>
   <body>
     <div id="container">
@@ -31,6 +33,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/blog/">Blog</a></li>
             <li><a href="/about/">About Me!</a></li>
+            <li><a href="/links/">Cool Links</a></li>
             <li><a href="/contact/">Contact Me!</a></li>
           </ul>
         </nav>
@@ -40,22 +43,23 @@
         <aside id="leftSidebar">
           <h2>Updates</h2>
           <div class="box">
-            <p>I have recently updated this tool as of August 2022!</p>
-            <ul style="padding-left:10px;">
-              <li>Rewrote the JS to generate cleaner code</li>
-              <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
-              <li>Added a couple of new features!</li>
-              <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
-            </ul>
+            <h2 style="margin-top: 0px; margin-bottom: 10px; text-align: center;"><a href="/blog/" style="text-decoration-style: dotted;">Latest Blogs</a></h2>
+		        <h4 class="rssLinkHeader"><a href="https://gay.mae.lol/blog/feed.xml" class="rssLinkBar">
+			      <img src="/assets/images/rss.png" class="rssLinkImage" alt=""> <span class="rssLinkText">rss feed</span></a></h4>
+
+		        {%- for post in collections.post | reverse | limit(2) -%}
+		          <hr>
+              <h4 class="rssTitle"><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+              <h5 class="rssSubtitle">{{ post.date | cute_date_only }}</h5>
+              {{ post.data.description | renderContent("md") | safe }}
+            {%- endfor -%}
           </div>
-          <h2>Hi there!</h2>
-          <h3>Other Tools</h3>
+          <h2>Linkies!</h2>
           <ul>
-            <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-            </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-            <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-            <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-            <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
+            <li><a href="https://pronouns.cc/@ginny" target="_blank">Pronouns Page</a></li>
+            <li><a href="https://transister.social/@gintoxicating" target="_blank">fediverse</a></li>
+            <li><a href="https://codeberg.org/gintoxicating" target="_blank">git (codeberg)</a></li>
+            <li><a href="/contact/">contact me!</a></li>
           </ul>
         </aside>
         <main>

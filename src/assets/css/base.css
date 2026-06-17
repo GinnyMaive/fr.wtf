@@ -35,6 +35,10 @@
     position: relative;
 }
 
+.blog_post h2, h4 {
+    margin: 0px;
+}
+
 .marquee div {
     display: block;
     width: 200%;
@@ -226,6 +230,32 @@ strong {
     height: 40px;
     padding: 10px;
     background-color: #FFC4C4;
+}
+
+/* i don't know what the hell i'm doing please dont judge me i'm sorry */
+.rssLinkHeader {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.rssLinkBar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+.rssLinkImage {
+    width: 20px;
+    height: 20px;
+}
+.rssLinkText {
+    text-decoration: underline;
+}
+.rssTitle {
+    margin-bottom: 0px;
+}
+.rssSubtitle {
+    margin-top: 0px;
 }
 
 @media only screen and (max-width: 800px) {

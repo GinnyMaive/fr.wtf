@@ -4,7 +4,7 @@ title: "How to talk to Ginny Mae :)"
 ---
 # Hiya!
 
-I like talking to people (now) so feel free to reach out and say hi, ask questions, or compliment me!
+Feel free to slide into my DMs anytime :)
 
 ## Preferred
 

@@ -14,11 +14,11 @@ test plain [^1]
 
 # h1
 
-hi
+hi this is^[inline footnote test] a test
 
 ## h2
 
-hoo
+hoo [^1] repeated footnote test
 
 ### h3
 

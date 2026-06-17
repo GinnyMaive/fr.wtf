@@ -41,13 +41,15 @@ module.exports = function(eleventyConfig) {
     const markdownItFootnote = require("markdown-it-footnote");
     const markdownItForInline = require("markdown-it-for-inline");
     const dirOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+    const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
     eleventyConfig.setQuietMode(true);
     eleventyConfig.addPlugin(dirOutputPlugin);
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     const { DateTime } = require("luxon");
     
-    eleventyConfig.setLibrary("md", markdownIt()
+    eleventyConfig.setLibrary("md", markdownIt({ html: true })
 			      .use(markdownItAnchor)
 			      .use(markdownItAttrs)
 			      .use(markdownItFootnote)
