@@ -95,10 +95,10 @@ body {
 /* these add a little extra content above the footnote links, instead of putting the text at the absolute top
 of the window */
 .footnote-item {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 20px;
 }
 .footnote-ref a {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 20px;
 }
 
 a[target="_blank"]::after {
