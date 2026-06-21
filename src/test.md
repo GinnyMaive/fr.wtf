@@ -27,7 +27,7 @@ Scratch my tummy actually i hate you now fight me i love cats i am one wake up s
 
 [^2]: hello from a multi-line footnote!
 
-  But **it worked** baby! And it's also technically not the second one oops
+     But **it worked** baby! And it's also technically not the second one oops
 
 ## Oh Wow a Subheading at H2?!
 
