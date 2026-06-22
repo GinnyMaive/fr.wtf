@@ -141,6 +141,32 @@ a[target="_blank"]::after {
     padding-top: 10px;
 }
 
+#buttonbar {
+    background-color: #FFC4C4;
+    width: 100%;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#buttonbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#buttonbar li a {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#buttonbar li a:hover {
+    background-color: #EE6983;
+    color: #850E35;
+}
+
 #leftSidebar {
     margin-top: 4px;
     margin-right: 4px;
