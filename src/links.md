@@ -24,6 +24,48 @@ alt="very pink background with dotted elements. it says 'meow!' in big block let
 <img src="/assets/images/88x31/beehive_gay.png" alt="a bee flying above the text 'beehive.gay'"></a>
 </li>
 
+<li>
+<a href="https://translunar.academy/" target="_blank">
+<img src="/assets/images/88x31/tla.png" alt="a button for translunar academy"></a>
+</li>
+
+</ul>
+</span>
+
+<span id="buttonbar">
+<ul>
+
+<li>
+<a href="https://lisamelton.net/" target="_blank">
+Lisa Melton</a>
+</li>
+
+<li>
+<a href="https://mkultra.monster/" target="_blank">
+cmdr-nova</a>
+</li>
+
+<li>
+<a href="https://willow.su/" target="_blank">
+Willow's macroblog</a>
+</li>
+
+</ul>
+</span>
+
+<span id="buttonbar">
+<ul>
+
+<li>
+<a href="https://www.dfxluna.xyz/" target="_blank">
+Emilia</a> (i call her dee-fix-luna)
+</li>
+
+<li>
+<s>Reign</s> <a href="https://reignofrain.ing/" target="_blank">
+Rain</a>
+</li>
+
 </ul>
 </span>
 
