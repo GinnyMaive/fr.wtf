@@ -58,7 +58,7 @@ Willow's macroblog</a>
 
 <li>
 <a href="https://www.dfxluna.xyz/" target="_blank">
-Emilia</a> (i call her dee-fix-luna)
+Emilia</a>
 </li>
 
 <li>
