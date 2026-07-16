@@ -37,7 +37,7 @@ avoid them as much as possible, but sometimes it's impossible to avoid.
 > I am intentional (and picky) with the things I create, and would probably
 > rewrite the entire thing even if I used generative technology (ask anyone
 > I've collaborated with and they will tell you how annoying I am).
->
+
 > Sometimes I search for synonyms or spelling and maybe that's AI now
 > because everything is? And the online Oxford English Dictionary requires
 > an account and fuck that.
@@ -50,7 +50,7 @@ avoid them as much as possible, but sometimes it's impossible to avoid.
 > probably know a *little* more about CSS because the last time I wrote HTML
 > we just used tables for everything, which is a little gauche now (and hard
 > to make accessible and responsive).
->
+
 > That said, it's very impossible to avoid these technologies entirely. It's
 > fairly straightfoward to ignore generative AI (which I do), but similar to
 > searching for words if I search a CSS question sometimes AI just answers
@@ -60,8 +60,9 @@ avoid them as much as possible, but sometimes it's impossible to avoid.
 
 ### AI/LLM created content is avoided in external resources
 
-> External tools, templates, etc. are avoided, though that relies on the
-> honesty and transparency of those providing those tools.
+> External tools, templates, etc which use or were created with generative AI
+> are avoided, though that relies on the honesty and transparency of those
+> providing those tools.
 
 > It's impossible to *really* be sure I'm avoiding generated content when
 > relying on the kindness of strangers, but many of the resources I used/use
