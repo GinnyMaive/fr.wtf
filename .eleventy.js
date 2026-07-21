@@ -78,7 +78,7 @@ module.exports = function(eleventyConfig) {
             language: "en",
             title: "Ginny Mae is rambling again...",
             subtitle: "the puns will get better",
-            base: "https://gintoxicat.ing/",
+            base: "https://fr.wtf/",
             author: {
                 name: "Ginny Mae (gintoxicating)",
                 email: "",
