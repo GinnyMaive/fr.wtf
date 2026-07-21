@@ -107,7 +107,7 @@ If you have a website you're probably capable of doing this without my help but
 here's some code to link to me! Feel free to make the text better idk.
 
 ```html
-<a href="https://gintoxicat.ing/">
+<a href="https://fr.wtf/">
     Ginny Mae's personal website
 </a>
 ```
@@ -116,8 +116,8 @@ You can also use my 88x31 button! You're welcome to link to the image on my serv
 make a local copy.
 
 ```html
-<a href="https://gintoxicat.ing/">
-    <img src="https://gintoxicat.ing/assets/images/88x31/ginny_88x31.png"
+<a href="https://fr.wtf/">
+    <img src="https://fr.wtf/assets/images/88x31/ginny_88x31.png"
      width="88" height="31" border="0" alt="ginny mae's website">
 </a>
 ```
@@ -126,8 +126,8 @@ Which should look something like this (I have centered mine because I know how t
 do that in CSS now):
 
 <div style="justify-content: center; display: flex;">
-<a href="https://gintoxicat.ing/">
-<img src="https://gintoxicat.ing/assets/images/88x31/ginny_88x31.png"
+<a href="https://fr.wtf/">
+<img src="https://fr.wtf/assets/images/88x31/ginny_88x31.png"
   width="88" height="31" border="0" alt="ginny mae's website">
 </a>
 </div>
