@@ -92,6 +92,14 @@ Rain</a>
 </li>
 
 </ul>
+
+<ul>
+<li>
+<a href="https://delphi.tools/" target="_blank">
+<img src="/assets/images/88x31/delphi-tools.jpg" width="240" height="90"></a>
+</li>
+
+</ul>
 </span>
 
 <br>
