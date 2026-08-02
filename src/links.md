@@ -77,11 +77,6 @@ Rain</a>
 <ul>
 
 <li>
-<a href="https://gotosocial.org/" target="_blank">
-<img src="/assets/images/88x31/gotosocial.png" alt="Goto Social logo"></a>
-</li>
-
-<li>
 <a href="https://en.wikipedia.org/wiki/Web_badge" target="_blank">
 <img src="/assets/images/88x31/88x31.gif"></a>
 </li>
