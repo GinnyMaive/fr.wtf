@@ -68,7 +68,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addPlugin(feedPlugin, {
-	type: "rss",
+	type: "atom",
         outputPath: "/blog/feed.xml",
         collection: {
             name: "post",
